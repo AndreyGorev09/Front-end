@@ -1,0 +1,141 @@
+a[href] {
+    font-size: 25px;
+}
+a[title="Cascading Style Sheets"] {
+    font-size: 15px;
+}
+
+input {
+    border: 7px solid red;
+}
+/* input {
+    border-width: 4px;
+    border-style: double;
+    border-color: green;
+} */
+
+
+/* [type] {
+    border: 7px solid red;
+} */
+
+/* [name] {
+    border: 7px solid red;
+} */
+
+/* input[type="text"] { */
+    /* border: 7px solid grey; */
+    /* border-color: gray;
+} */
+
+/* input[name="txt"] { */
+    /* border: 7px solid grey; */
+    /* border-color: gray;
+} */
+
+/* input[type="password"] { */
+    /* border: 7px solid green; */
+    /* border-color: green;
+} */
+
+/* input[name="pswd"] { */
+    /* border: 7px solid green; */
+    /* border-color: green;
+} */
+
+#tx {
+    border-color: grey;
+}
+
+#psw {
+    border-color: green;
+}
+
+.accent {
+    background-color: red;
+    color: white;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.font {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.style {
+    font-style: italic;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+.accent-font-style {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+.success-font-style {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+ /*Псевдоклассы  */
+
+/* p:nth-of-type(3n) {
+    background-color: green;
+}
+
+p:nth-of-type(3n+1) {
+    background-color: red;
+}
+
+p:nth-of-type(3n+2) {
+    background-color: blue;
+} */
+
+p::first-letter {
+    font-size: 20px;
+    border: 1px solid black;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+}
+
+p::first-line {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+li:nth-last-of-type(even):before {
+    content: "*";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li:not(:first-child):after {
+    content: "end";
+    background-color: red;
+}
