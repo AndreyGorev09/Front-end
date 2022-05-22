@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INDEX</title>
+</head>
+<body>
+    <h1>Index</h1>
+    <div>
+        <a href="index.html">index</a>
+        <a href="page.html">page</a>
+        <a href="pages/articles.html">articles</a>
+        <a href="pages/catalog.html">catalog</a>
+        <a href="pages/page-nav.html">inner nav</a>
+    </div>
+    <h2>Lorem ipsum dolor.</h2>
+    <h2>Numquam, odit, sunt.</h2>
+    <h3>Incidunt, laudantium, voluptas?</h3>
+    <h4>Dolorum, harum, saepe!</h4>
+    <h5>Autem, expedita, optio?</h5>
+    <h6>Error, itaque, qui?</h6>
+
+    <p><i>Lorem ipsum dolor.</i></p>
+    <p><em>Lorem ipsum dolor.</em></p>
+
+    <p><b>Lorem ipsum dolor.</b></p>
+    <p><strong>Lorem ipsum dolor.</strong></p>
+
+    <p><u>Lorem ipsum dolor.</u></p>
+    <p><tt>Lorem ipsum dolor.</tt></p>
+
+    <p>H<sub>2</sub>O</p>
+    <p>Y=X<sup>2</sup></p>
+
+    <p> &lt; and &gt;</p>
+    <p>&copy;</p>
+
+    <form action="handle-url" method="get">
+        <fieldset>
+            <legend>#1 Базовые поля</legend>
+
+            <div>
+                <label>Text
+                    <input id="text" type="text" placeholder="Text">
+                </label>
+            </div>
+
+            <div>
+                <label for="color">Color</label>
+                <input id="color" type="color">
+            </div>
+
+            <div>
+                <label>Date
+                    <input type="date">
+                </label>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+
+            <div>
+                <label>Hidden
+                    <input type="hidden">
+                </label>
+            </div>
+
+            <div>
+                <label for="file">File</label>
+                <input id="file" type="file">
+            </div>
+
+            <div>
+                <label>Number
+                    <input name="num" type="number" placeholder="Number">
+                </label>
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input name="psw" id="password" type="password" placeholder="Password" >
+            </div>
+
+            <div>
+                <label>Range
+                    <input type="range">
+                </label>
+            </div>
+
+            <div>
+                <label for="search">Search</label>
+                <input id="search" type="search" placeholder="Search">
+            </div>
+
+            <div>
+                <label>Tel
+                    <input name="tel" type="tel" placeholder="Tel">
+                </label>
+            </div>
+
+            <div>
+                <label for="week">Week</label>
+                <input  id="week" type="week">
+            </div>
+
+            <div>
+                <label>Url
+                    <input type="url" placeholder="Url">
+                </label>
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>#2 Управляемые поля</legend>
+                <div>
+                    <label for="button">Button</label>
+                    <input id="button" type="button" value="Кнопка 1">
+                </div>
+                <div>
+                    <label for="reset">Reset</label>
+                    <input id="reset" type="reset" value="Сбросить 1">
+                </div>
+
+                <div>
+                    <label>Submit
+                        <input type="submit" value="Отпарвить 1">
+                    </label>
+                </div>
+
+                <div>
+                    <button type="submit"> <b>Отправить</b> 2</button>
+                </div>
+                <div>
+                    <button type="reset"><i>Сбросить</i> 2</button>
+                </div>
+                <div>
+                    <button onclick="alert('Hello world')" type="button"><u>Кнопка</u> 2</button>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#3 Многострочный текст</legend>
+            <div>
+                <label for="multitext">Подробная информация</label>
+                <textarea name="text" id="multitext" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#4 Выподающие списки</legend>
+            <div>
+                <label for="list">Выберите год</label>
+                <select name="list" id="list" required multiple>
+                    <option selected value="" disabled>Выберите год</option>
+                    <option value="2016" >2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018" >2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#5 Множественный выбор</legend>
+            <div>
+                <label for="check1">Checkbox 1</label>
+                <input type="checkbox" name="box1" id="check1">
+                <label for="check2">Checkbox 2</label>
+                <input type="checkbox" name="box2" id="check2">
+                <label for="check3">Checkbox 3</label>
+                <input type="checkbox" name="box3" id="check3">
+                <label for="check4">Checkbox 4</label>
+                <input type="checkbox" name="box4" id="check4">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>#6 Единственный выбор</legend>
+            <div>
+                <label for="radio1">Radio 1</label>
+                <input value="1" type="radio" name="rad1" id="radio1">
+                <label for="radio2">Radio 2</label>
+                <input value="2" type="radio" name="rad1" id="radio2">
+                <label for="radio3">Radio 3</label>
+                <input value="3" type="radio" name="rad1" id="radio3">
+                <label for="radio4">Radio 4</label>
+                <input value="4" type="radio" name="rad1" id="radio4">
+            </div>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>
