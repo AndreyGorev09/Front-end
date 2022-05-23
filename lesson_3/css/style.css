@@ -51,7 +51,7 @@ input {
     border-color: green;
 }
 
-.accent {
+/* .accent {
     background-color: red;
     color: white;
 }
@@ -93,7 +93,13 @@ input {
     font-style: italic;
     font-family: Arial;
     text-decoration: underline;
-}
+} */
+
+
+
+/* ###################################################### */
+
+
 
  /*Псевдоклассы  */
 
@@ -109,7 +115,13 @@ p:nth-of-type(3n+2) {
     background-color: blue;
 } */
 
-p::first-letter {
+
+/* ############################################################# */
+
+
+/* Псевдоэлементы */
+
+/* p::first-letter {
     font-size: 20px;
     border: 1px solid black;
     float: left;
@@ -123,7 +135,7 @@ p::first-letter {
 p::first-line {
     font-weight: bold;
     text-decoration: underline;
-}
+} */
 
 ul {
     list-style: none;
@@ -138,4 +150,81 @@ li:nth-last-of-type(even):before {
 li:not(:first-child):after {
     content: "end";
     background-color: red;
+}
+
+.nav-link {
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: green;
+    border-bottom: 10px dotted red;
+    transition: 1s;
+}
+
+.nav-link:hover {
+    color: red;
+    font-size: 40px;
+    border-bottom-color: green;
+    margin-left: 20px;
+}
+
+
+/* ############################################# */
+
+
+
+/* Приоритет стилей (Каскадность) */
+
+/* Вес приоритета ID --> 100 */
+#body {
+    background-color: aquamarine;
+}
+/* Вес приоритета по атрибуту или классу --> 10 */
+[id="body"] {
+    background-color: darkgoldenrod;
+}
+.body {
+    background-color: brown !important; 
+}
+
+/* Вес приоритета тега --> 1 (решает порядок) */
+body {
+    background-color: gray;
+}
+/* INLINE STYLE Вес приоритета --> 1000 */
+
+/* Вес !important --> 10000 */
+
+
+/* ################################################### */
+
+
+/* Размерность в абсолютных и относительных велечинах */
+
+body{
+    font-size: 20px; /* 20px  --> */
+}
+
+p {
+    font-size: 100%; /* --> 20px  --> */
+}
+
+b {
+    font-size: 200%; /* --> 40px --> */
+}
+
+i {
+    font-size: 50%; /* --> 20px */
+}
+
+.parent {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background-color: green;
 }
